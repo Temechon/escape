@@ -1,0 +1,25 @@
+// Game GUI main style
+.gui {
+    position:absolute;
+    z-index:1;
+    top:10px;
+    left:50%;
+    transform: translateX(-50%);
+    user-select:none;
+    pointer-events: none;
+    
+    .guiElement {
+        color:white;
+        font-size: 2em;
+        @include apply-font(400);
+        text-shadow: 3px 3px 1px #333;
+    }
+    
+    // The game score
+    .score {
+        @extend .guiElement;
+        font-size:3.5em;
+        @include apply-font(700);
+    }
+    
+}
